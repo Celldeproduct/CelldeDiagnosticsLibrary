@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtViewCompleteMsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Touch Screen"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/countCanvasManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/desRL"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/ic_touch_screen_svg"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgd"
+            android:layout_marginTop="90dp"
+            />
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_below="@+id/imgd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="swipe"
+            android:visibility="visible"
+            android:id="@+id/desctxt"
+            android:textColor="@color/Black"
+            android:padding="16dp"
+
+            />
+
+
+
+
+        <Button
+            android:layout_below="@+id/desctxt"
+            android:id="@+id/starttouchTV"
+            android:layout_marginTop="15dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="Start"
+            android:textAllCaps="false"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

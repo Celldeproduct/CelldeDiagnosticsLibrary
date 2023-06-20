@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:background="@color/white"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtDeadPixelScreen"
+    >
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+       >
+
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/ic_display_svg"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgd"
+            android:layout_marginTop="90dp"
+            />
+
+        <TextView
+            android:layout_below="@+id/imgd"
+            android:id="@+id/txtManualDeadPixel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="0dp"
+            android:gravity="center"
+            android:text="Display"
+
+            />
+
+        <Button
+
+            android:id="@+id/txtDeadPixelStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtManualDeadPixel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:text="Start"
+            android:textAllCaps="false"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/Black"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtPixel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="Is screen free from dead pixels?"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Black"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDisplayFail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="No"
+                    android:textAllCaps="false"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDisplayPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Yes"
+                    android:textAllCaps="false"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
